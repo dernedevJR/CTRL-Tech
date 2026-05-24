@@ -1,0 +1,17 @@
+header{
+    background-color: var(--background-secundary-color);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-mobile{
+    height: 90px;
+}
+.img-desktop{
+    height:150px;
+    display:none;
+}
+.list-links{
+    display:none;
+}
