@@ -6,6 +6,8 @@
     --background-primary-color: #2563eb;
     --background-secundary-color: #00050e;
     --background-terciary-color: #1e293b;
+    --background-gradient-primary-color: #020617;
+    --background-gradient-secundary-color: #0F172A;
     --light-color: #f8fafc;
     --color-support:#98a3b8;
     
@@ -13,6 +15,7 @@
     --font-text: 'Inter';
 
     --text-weight-title: 600;
+    --text-weight: 500;
 
 }
 /* Reset Geral */
@@ -26,13 +29,3 @@ body{
     font-family: var(--font-title);
 }
 
-.btn{
-    background-color: var(--background-primary-color);
-    padding: 12px;
-    border-radius: 10px;
-    width: 160px;
-    text-align: center;
-    color: var(--light-color);
-    text-decoration: none;
-    font-weight: var(--text-weight-title) ;
-}
