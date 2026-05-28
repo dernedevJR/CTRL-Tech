@@ -7,6 +7,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
 .img-mobile {
@@ -41,15 +42,21 @@ input[type='checkbox']:checked~nav {
     font-family: var(--font-text);
     margin: 20px 0 15px 50px;
     padding: 10px;
-
+    display:flex;
+    gap:20px;
+    flex-direction:column;
 }
 
-.list-links li a {
+.list-links a {
     text-decoration: none;
     color: var(--light-color);
+    font-weight: var(--text-weight);
+    font-size: 1.1rem;
 }
 
-@media screen and (min-width: 768px) {
+
+
+@media screen and (min-width: 970px) {
     header {
         padding: 20px 40px;
     }
@@ -70,7 +77,6 @@ input[type='checkbox']:checked~nav {
         margin: 0;
         padding: 0;
         font-size: 15px;
-
     }
 
     .list-links ul {
@@ -85,4 +91,45 @@ input[type='checkbox']:checked~nav {
         color: var(--light-color);
         white-space: nowrap;
     }
+}
+
+@media screen and (min-width: 800px) {
+    .img-mobile{
+        display:none;
+    }
+    .img-desktop{
+        display: block;
+        width: 280px;
+        height: 155px;
+    }
+    .list-links{
+        gap:0
+    }
+    .list-links a {
+        position: relative;
+        transition: .3s;
+    }
+
+    .list-links a:not(.btn-support):hover {
+        color: var(--hover-color);
+    }
+
+    .list-links a:hover::after {
+        width: 100%;
+    }
+
+    .list-links a:not(.btn-support)::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background: var(--hover-color);
+        transition: .3s;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
 }

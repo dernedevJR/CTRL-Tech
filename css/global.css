@@ -10,6 +10,7 @@
     --background-gradient-secundary-color: #0F172A;
     --light-color: #f8fafc;
     --color-support:#98a3b8;
+    --hover-color:#2563eb;
     
     --font-title: 'Poppins', sans-serif;
     --font-text: 'Inter';
@@ -27,5 +28,20 @@
 
 body{
     font-family: var(--font-title);
+}
+
+.btn-support{
+    background: var(--background-primary-color);
+    padding: 14px 22px;
+    border-radius: 12px;
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: var(--text-weight-title);
+    transition: .3s;
+}
+
+.btn-support:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(37,99,235,.5);
 }
 
