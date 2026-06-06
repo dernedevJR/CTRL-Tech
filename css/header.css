@@ -11,7 +11,7 @@ header {
 }
 
 .img-mobile {
-    height: 90px;
+    height: 70px;
 }
 
 .img-desktop {
@@ -56,8 +56,9 @@ input[type='checkbox']:checked~nav {
 
 
 
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 768px) {
     header {
+        width: 100%;
         padding: 20px 40px;
     }
 
@@ -68,7 +69,6 @@ input[type='checkbox']:checked~nav {
     .menu {
         display: flex;
         flex-direction: row;
-        width: 100%
     }
 
     .list-links {
@@ -76,45 +76,25 @@ input[type='checkbox']:checked~nav {
         flex-direction: row;
         margin: 0;
         padding: 0;
-        font-size: 15px;
+        font-size: 12px;
+        
     }
 
-    .list-links ul {
-        width: 100%
-    }
 
     .list-links li {
-        margin: 15px;
+        gap: 10px;
     }
 
     .list-links li a {
         color: var(--light-color);
         white-space: nowrap;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    .img-mobile{
-        display:none;
-    }
-    .img-desktop{
-        display: block;
-        width: 280px;
-        height: 155px;
-    }
-    .list-links{
-        gap:0
-    }
-    .list-links a {
         position: relative;
-        transition: .3s;
     }
-
-    .list-links a:not(.btn-support):hover {
+        .list-links a:not(.btn-support):hover {
         color: var(--hover-color);
     }
 
-    .list-links a:hover::after {
+    .list-links a:not(.btn-support):hover::after {
         width: 100%;
     }
 
@@ -127,6 +107,24 @@ input[type='checkbox']:checked~nav {
         height: 2px;
         background: var(--hover-color);
         transition: .3s;
+    }
+
+     .list-links a {
+        transition: .3s;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .img-mobile{
+        display:none;
+    }
+    .img-desktop{
+        display: block;
+        width: 280px;
+        height: 155px;
+    }
+    .list-links{
+        gap:16px;
     }
 }
 
