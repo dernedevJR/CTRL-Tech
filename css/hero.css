@@ -1,0 +1,18 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap:30px;
+}
+.hero h1{
+    font-size: 40px;
+    font-weight: var(--text-weight-title);
+
+}
+.hero-tag{
+    color:  var(--primary-color);
+}
+.hero-img img{
+    width:150px;
+}
