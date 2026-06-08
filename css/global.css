@@ -35,8 +35,10 @@ body{
     background-color: var(--background-primary-color);
 }
 
-.btn-support{
-    background: var(--background-primary-color);
+.btn.link{
+    display: block;
+    width: 190px;
+    background: var(--primary-color);
     padding: 14px 22px;
     border-radius: 12px;
     color: var(--light-color);

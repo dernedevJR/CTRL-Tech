@@ -5,14 +5,47 @@
     padding: 40px 20px;
     gap:30px;
 }
-.hero h1{
-    font-size: 40px;
-    font-weight: var(--text-weight-title);
 
-}
 .hero-tag{
     color:  var(--primary-color);
+    font-size: 10px;
+    padding: 20px 0 0 0;
 }
+
+.hero h1{
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: var(--text-weight-title);
+    color: var(--light-color);
+}
+
+.hero span{
+    color:var(--primary-color);
+}
+
+.hero-description{
+    color: var(--light-color);
+    line-height: 1.9;
+    margin: 25px 0;
+    font-size: 20px;
+}
+
 .hero-img img{
-    width:150px;
+    width:100%;
+    max-width: 500px;
+}
+
+.hero-btns{
+ height: 50px;   
+}
+
+.btn.link.services{
+    width: 220px;
+    background-color: transparent;
+    color:var(--light-color);
+    border: solid 1.5px var(--light-color);
+}
+
+.btn.link.orc{
+    width: 220px;
 }
