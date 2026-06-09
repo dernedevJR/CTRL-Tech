@@ -41,6 +41,9 @@
 
 .hero-btns{
  height: 50px;   
+ display:flex;
+ flex-direction: column;
+ gap: 20px;
 }
 
 .btn.link.services{
@@ -52,4 +55,32 @@
 
 .btn.link.orc{
     width: 220px;
+}
+ 
+@media screen and (min-width: 768px){
+    .hero{
+        gap: 50px;
+    }
+    .hero h1{
+        font-size: 3rem;
+    }
+    
+    .hero-description{
+        font-size: 1.5rem
+    }
+    
+    .hero-btns{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .btn.link.services{
+    width: 360px;
+    text-align: center;
+}
+
+.btn.link.orc{
+    width: 360px;
+    text-align: center;
+}
 }

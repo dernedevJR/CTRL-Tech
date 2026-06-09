@@ -36,11 +36,14 @@ body{
 }
 
 .btn.link{
-    display: block;
-    width: 190px;
+    display: flex;
+    width: 180px;
     background: var(--primary-color);
-    padding: 14px 22px;
+    padding:  3px 18px;
     border-radius: 12px;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
     color: var(--light-color);
     text-decoration: none;
     font-weight: var(--text-weight-title);
