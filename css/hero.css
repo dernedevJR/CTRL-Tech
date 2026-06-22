@@ -4,6 +4,12 @@
     align-items: center;
     padding: 40px 20px;
     gap: 100px;
+    background: radial-gradient(
+        100% 100% at 80% 50%,
+        #0a1525 0%,
+        #04090f 60%,
+        #02050a 100%
+    );
 }
 
 .hero-tag{
@@ -33,10 +39,10 @@
 .hero-img{
     border-radius:15px;
     overflow: hidden;
-}
-.hero-img img{
+    background: url(../img/img-hero-sf.png) no-repeat;
+    background-size: cover;
     width:100%;
-    border-radius: 15px;
+    height:500px;
 }
 
 .hero-btns{
