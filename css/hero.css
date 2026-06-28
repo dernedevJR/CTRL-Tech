@@ -78,9 +78,7 @@
 }
  
 @media screen and (min-width: 768px){
-    .img-mobile{
-        height:50px;
-    }
+
     .hero{
         gap: 50px;
     }
