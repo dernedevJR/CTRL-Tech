@@ -74,16 +74,13 @@ input[type='checkbox']:checked~nav {
     .list-links {
         display: flex;
         flex-direction: row;
-        margin: 0;
-        padding: 0;
-        font-size: 12px;
+        font-size: 15px;
         align-items: center;
-        
     }
 
 
     .list-links li {
-        gap: 10px;
+        gap: 15px;
     }
 
     .list-links li a {
