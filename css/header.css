@@ -62,6 +62,10 @@ input[type='checkbox']:checked~nav {
         padding: 20px 40px;
     }
 
+    .img-mobile{
+       height: 110px;
+    }
+
     .navigation label {
         display: none;
     }
@@ -74,11 +78,8 @@ input[type='checkbox']:checked~nav {
     .list-links {
         display: flex;
         flex-direction: row;
-        margin: 0;
-        padding: 0;
-        font-size: 12px;
+        margin: 20px 0;
         align-items: center;
-        
     }
 
 
@@ -90,15 +91,31 @@ input[type='checkbox']:checked~nav {
         color: var(--light-color);
         white-space: nowrap;
         position: relative;
-    }
-        .list-links a:not(.btn-support):hover{
-        color: var(--hover-color);
+        font-size: 20px;
+        margin: 10px;
+
     }
 
-    .list-links a:not(.btn-support):hover::after {
-        width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .img-mobile{
+        display:none;
+    }
+    .img-desktop{
+        display: block;
+        width: 390px;
+        height: 155px;
     }
 
+    .list-links{
+        gap:10px;
+        padding: 0;
+    }
+    .list-links li a{
+        font-size: 25px;
+    }
+       
     .list-links a:not(.btn-support)::after {
         content: '';
         position: absolute;
@@ -110,22 +127,37 @@ input[type='checkbox']:checked~nav {
         transition: .3s;
     }
 
+    .list-links a:not(.btn.link):hover{
+        color: var(--hover-color);
+    }
+
+    .list-links a:not(.btn.link):hover::after {
+        width: 100%;
+    }
      .list-links a {
         transition: .3s;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .img-mobile{
-        display:none;
+@media screen and (min-width: 1440px){
+    header {
+        width: 100%;
+        padding: 15px 60px;
+        justify-content: flex-start;
     }
-    .img-desktop{
-        display: block;
-        width: 280px;
-        height: 155px;
+
+    .img-desktop {
+        width: 480px;
+        height: 200px;
     }
+       
     .list-links{
-        gap:16px;
+        margin:20px 0 20px 35px;
+        gap: 35px;
+    }
+    .list-links li a{
+        font-size: 35px;
     }
 }
+
 
