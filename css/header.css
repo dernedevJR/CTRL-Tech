@@ -1,0 +1,131 @@
+header {
+    background: linear-gradient(to right,
+            var(--background-gradient-primary-color),
+            var(--background-gradient-secundary-color));
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.img-mobile {
+    height: 70px;
+}
+
+.img-desktop {
+    height: 150px;
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+input[type='checkbox']:checked~nav {
+    display: block;
+    position: absolute;
+    background: linear-gradient(to right,
+            var(--background-gradient-primary-color),
+            var(--background-gradient-secundary-color));
+    left: 0px;
+    top: 100%;
+    width: 100%;
+}
+
+.list-links {
+    list-style: none;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: var(--text-weight);
+    font-family: var(--font-text);
+    margin: 20px 0 15px 50px;
+    padding: 10px;
+    display:flex;
+    gap:20px;
+    flex-direction:column;
+}
+
+.list-links a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: var(--text-weight);
+    font-size: 1.1rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    header {
+        width: 100%;
+        padding: 20px 40px;
+    }
+
+    .navigation label {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .list-links {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        align-items: center;
+        
+    }
+
+
+    .list-links li {
+        gap: 10px;
+    }
+
+    .list-links li a {
+        color: var(--light-color);
+        white-space: nowrap;
+        position: relative;
+    }
+        .list-links a:not(.btn-support):hover{
+        color: var(--hover-color);
+    }
+
+    .list-links a:not(.btn-support):hover::after {
+        width: 100%;
+    }
+
+    .list-links a:not(.btn-support)::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background: var(--hover-color);
+        transition: .3s;
+    }
+
+     .list-links a {
+        transition: .3s;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .img-mobile{
+        display:none;
+    }
+    .img-desktop{
+        display: block;
+        width: 280px;
+        height: 155px;
+    }
+    .list-links{
+        gap:16px;
+    }
+}
+
