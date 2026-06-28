@@ -3,19 +3,23 @@
 
 /*Variaveis*/
 :root{
-    --background-primary-color: #2563eb;
-    --background-secundary-color: #00050e;
+    --primary-color:#2563eb;
+    --secundary-color: #00050e;
+    --light-color: #f8fafc;
+
+    --background-primary-color: #00050e;
+    --background-secundary-color: #2563eb;
     --background-terciary-color: #1e293b;
     --background-gradient-primary-color: #020617;
     --background-gradient-secundary-color: #0F172A;
-    --light-color: #f8fafc;
+
     --color-support:#98a3b8;
     --hover-color:#2563eb;
     
     --font-title: 'Poppins', sans-serif;
     --font-text: 'Inter';
 
-    --text-weight-title: 600;
+    --text-weight-title: 700;
     --text-weight: 500;
 
 }
@@ -28,12 +32,18 @@
 
 body{
     font-family: var(--font-title);
+    background-color: var(--background-primary-color);
 }
 
-.btn-support{
-    background: var(--background-primary-color);
-    padding: 14px 22px;
+.btn.link{
+    display: flex;
+    width: 180px;
+    background: var(--primary-color);
+    padding:  3px 18px;
     border-radius: 12px;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
     color: var(--light-color);
     text-decoration: none;
     font-weight: var(--text-weight-title);
