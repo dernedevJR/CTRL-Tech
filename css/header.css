@@ -91,7 +91,7 @@ input[type='checkbox']:checked~nav {
         white-space: nowrap;
         position: relative;
     }
-        .list-links a:not(.btn-support):hover {
+        .list-links a:not(.btn-support):hover{
         color: var(--hover-color);
     }
 
@@ -129,6 +129,3 @@ input[type='checkbox']:checked~nav {
     }
 }
 
-@media screen and (min-width: 1440px){
-
-}

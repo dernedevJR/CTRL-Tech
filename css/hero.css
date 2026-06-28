@@ -4,12 +4,7 @@
     align-items: center;
     padding: 40px 20px;
     gap: 100px;
-    background: radial-gradient(
-        100% 100% at 80% 90%,
-        #0a1525 0%,
-        #04090f 60%,
-        #02050a 100%
-    );
+
 }
 .pc-glow{
     position: absolute;
@@ -104,13 +99,17 @@
     }
 
     .btn.link.services{
-    width: 360px;
+    width: 365px;
+    padding: 35px;
     text-align: center;
+    font-size: 28px;
 }
 
 .btn.link.orc{
-    width: 360px;
+    width: 365px;
+    padding: 35px;
     text-align: center;
+    font-size: 28px;
 }
 
 .hero-img{
@@ -139,4 +138,24 @@
     filter: blur(90px);
     z-index: 0;
 }
+}
+
+@media screen and (min-width: 1024px){
+    .hero-tag{
+        font-size: 20px; 
+    }
+
+    .hero h1{
+        font-size: 3.5rem;
+    }
+
+    .hero-description{
+        font-size: 2.1rem;
+    }
+   
+    .hero-img{
+        width:100%;
+        background-size: 100%;
+        min-height: 68vh;
+    }
 }
