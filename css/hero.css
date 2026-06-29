@@ -10,9 +10,9 @@
     position: absolute;
     right: 50px;
     top:0%;
-    transform: translateY(72%);
-    width: 460px;
-    height: 650px;
+    transform: translateY(70%);
+    width: 340px;
+    height: 580px;
     background: radial-gradient(
         circle at right bottom,
         rgba(2, 149, 255),
@@ -53,7 +53,7 @@
     background-size: 100%;
     background-position: center center;
     width:110%;
-    min-height: 100vh;
+    min-height: 50vh;
     z-index: 1;
 }
 
