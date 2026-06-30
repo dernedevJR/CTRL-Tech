@@ -53,7 +53,7 @@
     background-size: 100%;
     background-position: center center;
     width:110%;
-    min-height: 50vh;
+    min-height: 60vh;
     z-index: 1;
 }
 
@@ -103,7 +103,7 @@
     font-size: 28px;
 }
 
-.btn.link.orc{
+    .btn.link.orc{
     width: 365px;
     padding: 35px;
     text-align: center;
@@ -126,8 +126,8 @@
     right: 50px;
     top:0%;
     transform: translateY(65%);
-    width:800px;
-    height:725px;
+    width:700px;
+    height:755px;
     background: radial-gradient(
         circle at right bottom,
         rgba(2, 149, 255),
@@ -150,10 +150,50 @@
     .hero-description{
         font-size: 2.1rem;
     }
+
+    .btn.link.services{
+    width: 450px;
+}
+
+    .btn.link.orc{
+    width: 450px;
+}
    
     .hero-img{
         width:100%;
         background-size: 100%;
         min-height: 68vh;
+    }
+
+    .pc-glow{
+    width:920px;
+    height:760px;
+    background: radial-gradient(
+        circle at right bottom,
+        rgba(2, 149, 255),
+        transparent 70%
+    );
+    filter: blur(90px);
+    z-index: 0;
+}
+}
+
+@media screen and (min-width: 1440px){
+
+    .btn.link.services{
+    width: 670px;
+}
+
+    .btn.link.orc{
+    width: 670px;
+}
+
+     .hero-img{
+        width:95%;
+    }
+    
+    .pc-glow {
+        width: 1040px;
+        height: 850px;
     }
 }
