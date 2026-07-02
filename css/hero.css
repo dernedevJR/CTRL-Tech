@@ -117,7 +117,7 @@
     background-size: contain;
     background-position: center center;
     width:100%;
-    min-height: 100vh;
+    min-height: 450px;
     z-index: 1;
 }
 
@@ -127,7 +127,7 @@
     top:0%;
     transform: translateY(65%);
     width:700px;
-    height:755px;
+    height:700px;
     background: radial-gradient(
         circle at right bottom,
         rgba(2, 149, 255),
@@ -161,8 +161,8 @@
    
     .hero-img{
         width:100%;
-        background-size: 100%;
-        min-height: 68vh;
+        background-size: 80%;
+        min-height: 630px;
     }
 
     .pc-glow{
