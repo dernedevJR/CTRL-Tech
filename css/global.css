@@ -35,6 +35,10 @@ body{
     background-color: var(--background-primary-color);
 }
 
+/* section{
+    padding: 41px 51px 0px 20px;
+} */
+
 .btn.link{
     display: flex;
     width: 180px;
@@ -59,6 +63,7 @@ body{
     .btn.link{
     padding:  8px 100px;
 }
+
 }
 
 @media screen and (min-width: 1024px){
