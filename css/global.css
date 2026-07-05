@@ -35,10 +35,6 @@ body{
     background-color: var(--background-primary-color);
 }
 
-/* section{
-    padding: 41px 51px 0px 20px;
-} */
-
 .btn.link{
     display: flex;
     width: 180px;
