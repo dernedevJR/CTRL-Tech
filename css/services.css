@@ -9,26 +9,13 @@
     gap: 20px;
     flex-direction: column;
 }
-.card-form{
+
+.card{
     background-color:var(--background-terciary-color);
     border-radius: 15px;
-    padding: 10px;
+    padding: 60px;
 }
 
-.card-manu{
-    background-color:var(--background-terciary-color);
-    border-radius: 15px;
-    padding: 10px;
-}
-
-.card-up{
-    background-color:var(--background-terciary-color);
-    border-radius: 15px;
-    padding: 10px;
-}
-
-.card-sup{
-    background-color:var(--background-terciary-color);
-    border-radius: 15px;
-    padding: 10px;
+.img-computer{
+    width: 20px
 }
