@@ -14,8 +14,29 @@
     background-color:var(--background-terciary-color);
     border-radius: 15px;
     padding: 60px;
+    line-height: 35px;
+}
+.card h3{
+    font-size: 26px;
+    margin: 8px 0;
+}
+
+.card p{
+    font-size: 10px;
 }
 
 .img-computer{
-    width: 20px
+    width: 70px
+}
+
+.img-maintenance{
+    width: 70px
+}
+
+.img-upgrade{
+    width: 70px;
+}
+
+.img-remote{
+    width:70px;
 }
