@@ -1,4 +1,46 @@
 .services{
-    display: flex;
     color: var(--light-color);
+    padding: 0 20px;
+}
+
+.cards-container{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.card{
+    background-color:var(--background-terciary-color);
+    border-radius: 15px;
+    padding: 60px;
+    line-height: 35px;
+}
+.card-header{
+   display:flex;
+   align-items: center;
+   gap:15px;
+   margin: 35px 0px
+}
+
+.img-card{
+    width: 70px
+}
+
+.card h3{
+    font-size: 26px;
+    margin: 8px 0;
+}
+
+.card p{
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.card a{
+    color:var(--primary-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: var(--text-weight-title);
 }

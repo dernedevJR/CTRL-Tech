@@ -9,7 +9,7 @@
 
     --background-primary-color: #00050e;
     --background-secundary-color: #2563eb;
-    --background-terciary-color: #1e293b;
+    --background-terciary-color: #17346257;
     --background-gradient-primary-color: #020617;
     --background-gradient-secundary-color: #0F172A;
 
@@ -34,10 +34,6 @@ body{
     font-family: var(--font-title);
     background-color: var(--background-primary-color);
 }
-
-/* section{
-    padding: 41px 51px 0px 20px;
-} */
 
 .btn.link{
     display: flex;
