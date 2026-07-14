@@ -1,4 +1,4 @@
-.services{
+.services-tech{
     color: var(--light-color);
     padding: 0 20px;
 }
@@ -29,7 +29,6 @@
 
 .card h3{
     font-size: 26px;
-    margin: 8px 0;
 }
 
 .card p{
@@ -43,4 +42,51 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: var(--text-weight-title);
+}
+
+@media screen and (min-width: 768px){
+    .cards-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card{
+    width: 350px;
+    height: 400px;
+    padding: 30px;
+    
+}
+
+    .card p{
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 3px;
+}
+
+}
+
+@media screen and (min-width: 1024px){   
+    
+    .cards-container{
+        gap:25px;
+    }
+
+    .card{
+        width: 475px;
+        height: 300px;
+        padding: 30px;
+    }
+
+    .card a:hover{
+        text-decoration: underline;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .card {
+        width: 330px;
+        height: 360px;
+        padding: 30px;
+    }
 }
