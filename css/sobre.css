@@ -1,0 +1,26 @@
+header{
+    width: 100%;
+    justify-content: center;
+}
+.link-sobre{
+    color:var(--color-support);
+}
+.sobre{
+    padding: 10px 20px;
+}
+.info-sobre{
+    display:flex;
+    color:var(--light-color);
+  
+
+}
+
+.info-sobre p{
+    font-size: 15px;
+    margin: 10px 55px 0 0;
+      line-height: 35px;
+}
+
+.imgTec{
+    width: 470px;
+}
