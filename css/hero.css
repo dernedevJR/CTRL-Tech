@@ -164,7 +164,13 @@
     .btn.link.orc:active{
         background-color: #3158ab;
     }
-   
+   .btn.link.services:hover{
+    background-color:#4681ff;
+    border: none;
+   }
+       .btn.link.services:active{
+        background-color: #3158ab;
+    }
     .hero-img{
         width:100%;
         background-size: 80%;
