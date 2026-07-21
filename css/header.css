@@ -42,9 +42,9 @@ input[type='checkbox']:checked~nav {
     font-family: var(--font-text);
     margin: 20px 0 15px 50px;
     padding: 10px;
-    display:flex;
-    gap:20px;
-    flex-direction:column;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .list-links a {
@@ -62,8 +62,8 @@ input[type='checkbox']:checked~nav {
         padding: 20px 40px;
     }
 
-    .img-mobile{
-       height: 110px;
+    .img-mobile {
+        height: 110px;
     }
 
     .navigation label {
@@ -101,23 +101,25 @@ input[type='checkbox']:checked~nav {
 }
 
 @media screen and (min-width: 1024px) {
-    .img-mobile{
-        display:none;
-    }
-    .img-desktop{
-        display: block;
-        width: 390px;
-        height: 155px;
+    .img-mobile {
+        display: none;
     }
 
-    .list-links{
-        gap:10px;
+    .img-desktop {
+        display: block;
+        width: 280px;
+        height: 110px;
+    }
+
+    .list-links {
+        gap: 10px;
         padding: 0;
     }
-    .list-links li a{
+
+    .list-links li a {
         font-size: 25px;
     }
-       
+
     .list-links a:not(.btn-support)::after {
         content: '';
         position: absolute;
@@ -129,19 +131,20 @@ input[type='checkbox']:checked~nav {
         transition: .3s;
     }
 
-    .list-links a:not(.btn.link):hover{
+    .list-links a:not(.btn.link):hover {
         color: var(--hover-color);
     }
 
     .list-links a:not(.btn.link):hover::after {
         width: 100%;
     }
-     .list-links a {
+
+    .list-links a {
         transition: .3s;
     }
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
     header {
         width: 100%;
         padding: 15px 60px;
@@ -152,14 +155,13 @@ input[type='checkbox']:checked~nav {
         width: 480px;
         height: 200px;
     }
-       
-    .list-links{
-        margin:20px 0 20px 35px;
+
+    .list-links {
+        margin: 20px 0 20px 35px;
         gap: 35px;
     }
-    .list-links li a{
+
+    .list-links li a {
         font-size: 35px;
     }
 }
-
-
