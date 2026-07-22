@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>CTRLTECH</title>
 </head>
+
 <body class="support">
-        <header>
+    <header>
         <a href="index.html">
             <img class="img-mobile" src="../img/logo-1.png"
                 alt="Logo do site com formato hexagonal, contendo as letras C e T dentro do mesmo,  na cor azul e branca respectivamente">
@@ -25,7 +27,7 @@
                 <ul class="list-links">
                     <li>
                         <a href="index.html#1">Serviços</a>
-                    </li>   
+                    </li>
                     <li>
                         <a href="sobre.html">Sobre</a>
                     </li>
@@ -39,19 +41,24 @@
             </nav>
         </div>
     </header>
+
     <section class="form">
-        <form action="/enviar-dados" method="POST">
+        <div class="support-top">
+            <h2>Solicite um <span>suporte técnico</span></h2>
+            <p>Preencha o formulário e nossa equipe entrará em contato o mais rápido possível.</p>
+        </div>
+        <form class="formulary" action="/enviar-dados" method="POST">
             <label for="name">Nome:</label>
-            <input type="text" id="name" name="nome" required> <br>
+            <input class="name" type="text" id="name" name="nome" required> <br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required> <br>
-            
-            <label for="tel">Celular:</label>
-            <input type="tel" name="tel" id="tel"> <br>
+            <input class='email' type="email" id="email" name="email" required> <br>
 
-            <label for="servico">Tipo de Serviço:</label> 
-            <input type="text" name="servico" id="servico" list="servicos" required> <br>
+            <label for="tel">Celular:</label>
+            <input class="cel" type="tel" name="tel" id="tel"> <br>
+
+            <label for="servico">Tipo de Serviço:</label>
+            <input class="service" type="text" name="servico" id="servico" list="servicos" placeholder="Selecione o tipo de serviço" required> <br>
             <datalist id="servicos">
                 <option value="">Serviços</option>
                 <option value="Manutenção">Solicite manutenção do seu aparelho</option>
@@ -62,8 +69,61 @@
             </datalist>
 
             <label for="descricao">Descrição do Serviço:</label>
-            <input type="text" name="descricao" id="descricao">
+            <textarea class='description' name="descricao" id="descricao"></textarea> <br>
+
+            <div class="container-buttons">
+                <button class='btn-form' type="submit">Enviar</button>
+                <button class="btn-form reset" type="reset">Apagar</button>
+            </div>
         </form>
     </section>
+        <footer id="2">
+        <div class="footer-container">
+            <div class="footer-info">
+                <a href="index.html"><img class="logo-footer" src="../img/logo_complete_desktop-1.png" alt=""></a>
+                <p>Soluções inteligentes em tecnologia <br> para você e sua empresa</p>
+                <div class="img-container">
+                    <a href="#"><img class="img-footer" src="../img/facebook.png" alt=""></a>
+                    <a href="#"><img class="img-footer" src="../img/instagram.png" alt=""></a>
+                    <a href="#"><img class="img-footer" src="../img/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-card">
+                <h3>Navegação</h3>
+                <ul class="footer-list">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="">
+                        <li>Serviços</li>
+                    </a>
+                    <a href="">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-card"">
+                <h3>Serviços</h3>
+                <ul class=" footer-list">
+                <a href="">
+                    <li>Formatação</li>
+                </a>
+                <a href="">
+                    <li>Upgrade</li>
+                </a>
+                <a href="">
+                    <li>Manutenção</li>
+                </a>
+                <a href="">
+                    <li>Suporte remoto</li>
+                </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
