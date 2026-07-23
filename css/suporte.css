@@ -16,7 +16,7 @@
     width: 850px;
     border-radius: 15px;
     font-size: 15px;
-    font-weight: var(--text-weigth-link);
+    font-weight: var(--text-weigth);
     box-shadow: 3px 7px 30px 1px var(--background-secundary-color);
 }
 
@@ -42,14 +42,24 @@ input:focus{
     box-shadow:0 0 20px rgba(37,99,235,.25);
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px #1b48914c inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 .email{
-    width:250px
+    width:250px;
 }
 .cel{
     width: 150px;
 }
 .service{
-    width: 200px
+    width: 200px;
 }
 .description{
     width: 550px;
