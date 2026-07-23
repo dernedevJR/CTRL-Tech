@@ -1,18 +1,18 @@
-.manu .sobre h1{
+.upgrade .sobre h1{
     color: var(--light-color);
 }
-.manu .sobre span{
+.upgrade .sobre span{
     color: var(--primary-color);
 }
-.info-manu{
+.info-upgrade{
         color:var(--light-color);
         display:flex;
 }
 
-.info-manu p{
+.info-upgrade p{
     line-height: 50px;
 }
-.btn.link.manu{
-    margin: -70px 0 120px 0;
+.btn.link.up{
+    margin: -20px 0 120px 0;
     padding: 15px 0;
 }

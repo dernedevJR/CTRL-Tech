@@ -8,7 +8,7 @@
     <title>CTRLTECH</title>
 </head>
 
-<body class="support">
+<body class="upgrade">
     <header>
         <a href="index.html">
             <img class="img-mobile" src="../img/logo-1.png"
@@ -34,47 +34,29 @@
                     <li>
                         <a href="#2">Contato</a>
                     </li>
+                    <li>
+                        <a class="btn link" href="suporte.html">Solicitar suporte</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <section class="form">
-        <div class="support-top">
-            <h2>Solicite seu <span>atendimento personalizado</span></h2>
-            <p>Preencha o formulário e nossa equipe entrará em contato o mais rápido possível.</p>
+    <section class="sobre">
+        <p class="tag">
+            Upgrade
+        </p>
+        <h1>Upgrade de <span>Hardware</span></h1>
+        <div class="info-upgrade">
+            <p>
+                Dê uma nova vida ao seu computador com upgrades inteligentes. Realizamos a instalação de SSD, aumento de
+                memória RAM, substituição de componentes e outras melhorias para oferecer mais velocidade, desempenho e
+                produtividade.
+            </p>
+            <img class='imgTec' src="../img/up-img.png" alt="imagem de um notebook">
         </div>
-        <form class="formulary" action="/enviar-dados" method="POST">
-            <label for="name">Nome:</label>
-            <input class="name" type="text" id="name" name="nome" required> <br>
-
-            <label for="email">Email:</label>
-            <input class='email' type="email" id="email" name="email" required> <br>
-
-            <label for="tel">Celular:</label>
-            <input class="cel" type="tel" name="tel" id="tel"> <br>
-
-            <label for="servico">Tipo de Serviço:</label>
-            <input class="service" type="text" name="servico" id="servico" list="servicos" placeholder="Selecione o tipo de serviço" required> <br>
-            <datalist id="servicos">
-                <option value="">Serviços</option>
-                <option value="Manutenção">Solicite manutenção do seu aparelho</option>
-                <option value="Instalação">Tem algum aparelho que queira instalar?</option>
-                <option value="Upgrade">Mais desempenho para o seu PC</option>
-                <option value="Formatação">Seu PC como veio ao mundo. Sistema seguro e com backup</option>
-                <option value="Outros">Nos diga qual serviço deseja!</option>
-            </datalist>
-
-            <label for="descricao">Descrição do Serviço:</label>
-            <textarea class='description' name="descricao" id="descricao"></textarea> <br>
-
-            <div class="container-buttons">
-                <button class='btn-form' type="submit">Enviar</button>
-                <button class="btn-form reset" type="reset">Apagar</button>
-            </div>
-        </form>
+        <a class="btn link up" href="suporte.html">Quero um UP!</a>
     </section>
-        <footer id="2">
+    <footer id="2">
         <div class="footer-container">
             <div class="footer-info">
                 <a href="index.html"><img class="logo-footer" src="../img/logo_complete_desktop-1.png" alt=""></a>

@@ -69,6 +69,7 @@
     color:var(--light-color);
     border: solid 1.5px var(--light-color);
     padding: 14px 20px;
+    display: none;
 }
 
 .btn.link.orc{
