@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>CTRLTECH</title>
 </head>
-<body>
-     <header>
+
+<body class="support">
+    <header>
         <a href="index.html">
             <img class="img-mobile" src="../img/logo-1.png"
                 alt="Logo do site com formato hexagonal, contendo as letras C e T dentro do mesmo,  na cor azul e branca respectivamente">
@@ -41,27 +41,43 @@
             </nav>
         </div>
     </header>
-    <section class="sobre">
-        <p class="tag">
-            SOBRE A CTRLTECH
-        </p>
-        <div class="info-sobre">
-            <p>
-                A CTRL TECH nasceu com a missão de oferecer soluções em tecnologia de forma simples, eficiente e
-                acessível.
-                Sabemos que computadores e equipamentos são essenciais para o dia a dia de pessoas e empresas, por isso
-                trabalhamos para garantir desempenho, segurança e confiabilidade em cada atendimento.
-                Nosso foco é prestar um suporte técnico de qualidade, realizando manutenção preventiva e corretiva,
-                upgrades de
-                hardware, formatação, otimização de sistemas e consultoria especializada para atender às necessidades de
-                cada
-                cliente.
-            </p>
-            <img class='imgTec' src="../img/imagem-tecnico.png"
-                alt="imagem de técnico de manutenção consertando um gabinete">
+
+    <section class="form">
+        <div class="support-top">
+            <h2>Solicite um <span>suporte técnico</span></h2>
+            <p>Preencha o formulário e nossa equipe entrará em contato o mais rápido possível.</p>
         </div>
+        <form class="formulary" action="/enviar-dados" method="POST">
+            <label for="name">Nome:</label>
+            <input class="name" type="text" id="name" name="nome" required> <br>
+
+            <label for="email">Email:</label>
+            <input class='email' type="email" id="email" name="email" required> <br>
+
+            <label for="tel">Celular:</label>
+            <input class="cel" type="tel" name="tel" id="tel"> <br>
+
+            <label for="servico">Tipo de Serviço:</label>
+            <input class="service" type="text" name="servico" id="servico" list="servicos" placeholder="Selecione o tipo de serviço" required> <br>
+            <datalist id="servicos">
+                <option value="">Serviços</option>
+                <option value="Manutenção">Solicite manutenção do seu aparelho</option>
+                <option value="Instalação">Tem algum aparelho que queira instalar?</option>
+                <option value="Upgrade">Mais desempenho para o seu PC</option>
+                <option value="Formatação">Seu PC como veio ao mundo. Sistema seguro e com backup</option>
+                <option value="Outros">Nos diga qual serviço deseja!</option>
+            </datalist>
+
+            <label for="descricao">Descrição do Serviço:</label>
+            <textarea class='description' name="descricao" id="descricao"></textarea> <br>
+
+            <div class="container-buttons">
+                <button class='btn-form' type="submit">Enviar</button>
+                <button class="btn-form reset" type="reset">Apagar</button>
+            </div>
+        </form>
     </section>
-    <footer id="2">
+        <footer id="2">
         <div class="footer-container">
             <div class="footer-info">
                 <a href="index.html"><img class="logo-footer" src="../img/logo_complete_desktop-1.png" alt=""></a>
