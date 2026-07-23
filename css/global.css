@@ -20,6 +20,7 @@
     --font-text: 'Inter';
 
     --text-weight-title: 700;
+    --text-weigth-link: 100;
     --text-weight: 500;
 
 }
@@ -50,21 +51,25 @@ body{
     transition: .3s;
 }
 
-.btn-support:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 0 20px rgba(37,99,235,.5);
-}
 
 @media screen and (min-width: 768px){
     .btn.link{
     padding:  8px 100px;
 }
 
-}
-
 @media screen and (min-width: 1024px){
     .btn.link{
     padding:  15px 108px;
+}
+.btn.link:hover{
+    transform: translateY(-3px);
+    background-color: #4681ff;
+    box-shadow: 1px 1px 30px 1px #2563eb;
+}
+
+.btn.link:active{
+        background-color: #3158ab;
+    }
 }
 }
 

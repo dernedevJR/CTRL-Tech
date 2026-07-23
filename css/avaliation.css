@@ -1,0 +1,20 @@
+.avaliation-container{
+    background-color: var(--background-terciary-color);
+    color: var(--light-color);
+    display: flex; 
+    margin: 20px 20px 0 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding:20px;
+}
+.avaliation-cards{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+}
+
+.avaliation-container h3{
+    font-size: 45px;
+}
