@@ -1,0 +1,13 @@
+.info-format{
+        color:var(--light-color);
+        display:flex;
+}
+
+.info-format p{
+    line-height: 50px;
+}
+
+.btn.link.format{
+    margin: -100px 0 120px 0;
+    padding: 20px;
+}
