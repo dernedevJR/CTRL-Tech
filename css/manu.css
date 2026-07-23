@@ -1,0 +1,10 @@
+.manu .sobre h1{
+    color: var(--light-color);
+}
+.manu .sobre span{
+    color: var(--primary-color);
+}
+.btn.link.manu{
+    margin: -70px 0 120px 0;
+    padding: 15px 0;
+}
