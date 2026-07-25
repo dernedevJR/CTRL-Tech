@@ -7,12 +7,14 @@ form.addEventListener("submit", function (e) {
     mensagem = document.getElementById('elementoJs')
 
     if (valor === '') {
+        mensagem.classList.remove('sucesso');
         mensagem.classList.add('erro');
         mensagem.innerText = '⚠ Preencha o campo com o seu nome';
 
     }
     else {
-        
+        mensagem.classList.remove('erro');
+        mensagem.classList.add('sucesso');
         mensagem.innerText = 'Sucesso!';
     }
 
