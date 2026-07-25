@@ -45,17 +45,18 @@
             <p>Preencha o formulário e nossa equipe entrará em contato o mais rápido possível.</p>
         </div>
         <form class="formulary" action="/enviar-dados" method="POST">
-            <label for="name">Nome:</label>
-            <input class="name" type="text" id="name" name="nome" required> <br>
+            <label id='nome' for="name">Nome:</label>
+            <input class="name" type="text" id="name" name="nome">
+            <p id="elementoJs"></p> <br>
 
             <label for="email">Email:</label>
-            <input class='email' type="email" id="email" name="email" required> <br>
+            <input class='email' type="email" id="email" name="email" > <br>
 
             <label for="tel">Celular:</label>
             <input class="cel" type="tel" name="tel" id="tel"> <br>
 
             <label for="servico">Tipo de Serviço:</label>
-            <input class="service" type="text" name="servico" id="servico" list="servicos" placeholder="Selecione o tipo de serviço" required> <br>
+            <input class="service" type="text" name="servico" id="servico" list="servicos" placeholder="Selecione o tipo de serviço" > <br>
             <datalist id="servicos">
                 <option value="">Serviços</option>
                 <option value="Manutenção">Solicite manutenção do seu aparelho</option>
@@ -69,7 +70,7 @@
             <textarea class='description' name="descricao" id="descricao"></textarea> <br>
 
             <div class="container-buttons">
-                <button class='btn-form' type="submit">Enviar</button>
+                <button id='enviar' class='btn-form' type="submit">Enviar</button>
                 <button class="btn-form reset" type="reset">Apagar</button>
             </div>
         </form>
@@ -118,6 +119,6 @@
             </div>
         </div>
     </footer>
+    <script src="../javascript/script.js"></script>
 </body>
-
 </html>
