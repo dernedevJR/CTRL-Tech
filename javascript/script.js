@@ -1,5 +1,7 @@
 const form = document.querySelector('.formulary');
 const nome = document.querySelector('.name');
+const email = document.querySelector('.email');
+const number = documen.querySelector(".cel");
 
 form.addEventListener("submit", function (e) {
 
