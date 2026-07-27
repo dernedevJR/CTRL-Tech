@@ -1,12 +1,11 @@
 const form = document.querySelector('.formulary');
 const nome = document.querySelector('.name');
-const email = document.querySelector('.email');
-const number = documen.querySelector(".cel");
+
+const mensagem = document.getElementById('elementoJs')
 
 form.addEventListener("submit", function (e) {
 
-    valor = nome.value.trim();
-    mensagem = document.getElementById('elementoJs')
+    let valor = nome.value.trim();
 
     if (valor === '') {
         mensagem.classList.remove('sucesso');
