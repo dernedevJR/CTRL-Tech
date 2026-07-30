@@ -1,23 +1,38 @@
-const form = document.querySelector('.formulary');
-const nome = document.querySelector('.name');
+// Declaração de Variáveis 
+const form = document.querySelector(".formulary");
+const nome = document.querySelector(".name");
+// const email = document.querySelector(".email");
+// const cel = document.querySelector(".cel"); 
+// const service = document.querySelector(".service");
+const mensagem = document.querySelector(".elementoJs");
 
-form.addEventListener("submit", function (e) {
+// Validar o Campo 
 
-    valor = nome.value.trim();
-    mensagem = document.getElementById('elementoJs')
+function validarCampo(campo){
+    const valor = campo.value.trim();
 
-    if (valor === '') {
+    if(valor === ''){
+        return false;
+    } 
+
+    else{
+        return true;
+    }
+}
+
+// Validação do Formulário 
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    
+    if(validarCampo(nome)){
+        mensagem.classList.remove('erro');
+        mensagem.classList.add('sucesso');
+        mensagem.textContent = 'Sucesso!';
+    }
+    else{
+        mensagem.classList.remove('sucesso');
         mensagem.classList.add('erro');
-        mensagem.innerText = '⚠ Preencha o campo com o seu nome';
-
+        mensagem.textContent = '⚠ Favor preencha o campo!';
     }
-    else {
-        
-        mensagem.innerText = 'Sucesso!';
-    }
-
-    e.preventDefault();
-});
-nome.addEventListener('input', () => {
-    mensagem.innerText = ''
 })
+
