@@ -44,19 +44,21 @@
             <h2>Solicite seu <span>atendimento personalizado</span></h2>
             <p>Preencha o formulário e nossa equipe entrará em contato o mais rápido possível.</p>
         </div>
-        <form class="formulary" action="/enviar-dados" method="POST">
+        <form autocomplete="off" class="formulary" action="/enviar-dados" method="POST">
             <label id='nome' for="name">Nome:</label>
             <input class="name" type="text" id="name" name="nome">
-            <p id="elementoJs"></p> <br>
+            <p class="msgname"></p> 
 
             <label for="email">Email:</label>
-            <input class='email' type="email" id="email" name="email" > <br>
+            <input class='email' type="email" id="email" name="email" > 
+            <p class="msgemail"></p> 
 
             <label for="tel">Celular:</label>
-            <input class="cel" type="tel" name="tel" id="tel"> <br>
+            <input class="cel" type="tel" maxlength="14 required="f name="tel" id="tel"> 
+            <p class="msgcel"></p>
 
             <label for="servico">Tipo de Serviço:</label>
-            <input class="service" type="text" name="servico" id="servico" list="servicos" placeholder="Selecione o tipo de serviço" > <br>
+            <input class="service" type="text" name="servico" id="servico" list="servicos" placeholder="Selecione o tipo de serviço" >
             <datalist id="servicos">
                 <option value="">Serviços</option>
                 <option value="Manutenção">Solicite manutenção do seu aparelho</option>
@@ -65,9 +67,10 @@
                 <option value="Formatação">Seu PC como veio ao mundo. Sistema seguro e com backup</option>
                 <option value="Outros">Nos diga qual serviço deseja!</option>
             </datalist>
+            <p class="msgservice"></p> 
 
             <label for="descricao">Descrição do Serviço:</label>
-            <textarea class='description' name="descricao" id="descricao"></textarea> <br>
+            <textarea class='description' name="descricao" id="descricao"></textarea> 
 
             <div class="container-buttons">
                 <button id='enviar' class='btn-form' type="submit">Enviar</button>

@@ -21,7 +21,7 @@
 }
 
 .formulary{
-    line-height: 50px;
+    line-height: 30px;
     margin: 0 20px;
      display: flex;
     flex-direction: column;
@@ -51,12 +51,19 @@ select:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #1b48914c inset;
     transition: background-color 5000s ease-in-out 0s;
 }
+.msgerro{
+    color: rgb(255, 0, 0);
+}
+
 .erro{
-    color: red;
+    border-color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 8px 0px rgb(255, 3, 3);
 }
 .sucesso{
-    color: green;
+    border-color: rgb(7, 207, 7);
+    box-shadow: 0px 0px 8px 0px rgb(7, 207, 7);
 }
+
 .email{
     width:250px;
 }
@@ -70,6 +77,8 @@ select:-webkit-autofill {
     width: 550px;
     height: 150px;
     resize: none;
+    margin-bottom: 20px;
+    font-family: var(--font-text);
 }
 .container-buttons{
     display:flex;
