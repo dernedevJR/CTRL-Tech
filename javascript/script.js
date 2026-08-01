@@ -9,14 +9,16 @@ const msgemail = document.querySelector(".msgemail");
 const msgcel = document.querySelector(".msgcel");
 const msgservice = document.querySelector(".msgservice");
 
-// Validar o Campo 
+const mensagem = document.getElementById('elementoJs')
 
-function validarCampo(campo){
-    const valor = campo.value.trim();
+form.addEventListener("submit", function (e) {
 
-    if(valor === ''){
-        return false;
-    } 
+    let valor = nome.value.trim();
+
+    if (valor === '') {
+        mensagem.classList.remove('sucesso');
+        mensagem.classList.add('erro');
+        mensagem.innerText = '⚠ Preencha o campo com o seu nome';
 
     else{
         return true;
