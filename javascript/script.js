@@ -25,8 +25,6 @@ function validarCampo(campo){
 
 // Validação do Formulário 
 form.addEventListener("submit", (e) => {
-    e.preventDefault()
-    
     if(validarCampo(nome)){
         msgname.classList.remove('erro');
         nome.classList.add('sucesso');
