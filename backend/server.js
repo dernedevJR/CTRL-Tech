@@ -3,11 +3,17 @@ const express = require('express');
 // Recebe a função que vem do módulo 'express'.
 const app = express();
 
-// Rota POST 
+// Middleware 
+app.use(express.urlencoded({extended:true}))
 
-app.post("/enviar-dados", (req , res) => {
-    res.send("Olá mundo!!")
-});
+// Enviar-dados
+app.post("/enviar-dados", (req, res) => {
+    const nome = req.body.nome
+    console.log(`Nome: ${nome}`);
+})
+
+
+
 
 // Motorzinho 
 app.listen(3000, () => {
