@@ -8,8 +8,24 @@ app.use(express.urlencoded({extended:true}))
 
 // Enviar-dados
 app.post("/enviar-dados", (req, res) => {
-    const nome = req.body.nome
+    const nome = req.body.nome;
+    const email = req.body.email;
+    const tel = req.body.tel;
+    const servico = req.body.servico;
+    const descricao = req.body.descricao;
+    
     console.log(`Nome: ${nome}`);
+    console.log(`Email: ${email}`);
+    console.log(`Tel: ${tel}`);
+    console.log(`Servico: ${servico}`);
+    console.log(`Descrição: ${descricao}`);
+
+      res.send(`
+    <script>
+      alert("Operação realizada com sucesso!");
+      window.location.href = 'http://127.0.0.1:5500/html/'; // Redireciona após o alerta
+    </script>   
+  `);
 })
 
 
