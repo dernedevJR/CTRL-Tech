@@ -2,6 +2,10 @@
 const express = require('express');
 // Recebe a função que vem do módulo 'express'.
 const app = express();
+// Traz a biblioteca para o server
+const sqlite3 = require('sqlite3').verbose();
+// Conecta o servidor ao Database
+const db = new sqlite3.Database('/form.sqlite')
 
 // Middleware 
 app.use(express.urlencoded({extended:true}))
