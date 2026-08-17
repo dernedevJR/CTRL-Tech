@@ -5,10 +5,21 @@ const app = express();
 // Traz a biblioteca para o server
 const sqlite3 = require('sqlite3').verbose();
 // Conecta o servidor ao Database
-const db = new sqlite3.Database('/form.sqlite')
+const db = new sqlite3.Database('./database/form.db')
 
 // Middleware 
 app.use(express.urlencoded({extended:true}))
+// Preencher DATABASE 
+db.run(`
+  CREATE TABLE IF NOT EXISTS solicitacoes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    email TEXT,
+    celular TEXT,
+    servico TEXT, 
+    descricao TEXT 
+  )`
+)
 
 // Enviar-dados
 app.post("/enviar-dados", (req, res) => {
@@ -18,21 +29,28 @@ app.post("/enviar-dados", (req, res) => {
     const servico = req.body.servico;
     const descricao = req.body.descricao;
     
-    console.log(`Nome: ${nome}`);
-    console.log(`Email: ${email}`);
-    console.log(`Tel: ${tel}`);
-    console.log(`Servico: ${servico}`);
-    console.log(`Descrição: ${descricao}`);
+    db.run(`
+      INSERT INTO solicitacoes (nome,email,celular,servico,descricao) 
+      VALUES (?, ?, ?, ? , ?) `,
+       [nome, email, tel, servico, descricao],
+      function(err){
+        if(err){
+          console.error(err);
+          return;
+        } 
+        console.log('Solicitação salva');
+        console.log('ID: ', this.lastID);
+        res.send(`
+          <script>
+          alert("Operação realizada com sucesso!");
+          window.location.href = 'http://127.0.0.1:5500/html/'; // Redireciona após o alerta
+          </script>   
+        `)
+      }
+);
 
-      res.send(`
-    <script>
-      alert("Operação realizada com sucesso!");
-      window.location.href = 'http://127.0.0.1:5500/html/'; // Redireciona após o alerta
-    </script>   
-  `);
+
 })
-
-
 
 
 // Motorzinho 
