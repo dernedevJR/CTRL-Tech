@@ -40,6 +40,7 @@ app.post("/enviar-dados", (req, res) => {
         } 
         console.log('Solicitação salva');
         console.log('ID: ', this.lastID);
+        // Avisar ao usuário e retornar a página principal
         res.send(`
           <script>
           alert("Operação realizada com sucesso!");
