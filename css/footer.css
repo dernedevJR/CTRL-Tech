@@ -2,6 +2,7 @@
     display: flex;
     background: linear-gradient(to right, var(--background-gradient-primary-color), var(--background-gradient-secundary-color));
     justify-content: center;
+    flex-direction: column;
 }
 .logo-footer-pc{
     width: 250px;
@@ -41,6 +42,21 @@
 
 .img-footer{
     width: 24px;
+}
+.line-footer{
+    width: 360px;
+    margin: auto;
+    background-color: var(--color-line);
+    border: solid var(--color-line) 1px;
+    margin-bottom: 20px;
+}
+
+.p-footer{
+    color: var(--light-color);
+    font-size: 14px;
+    font-weight: var(--text-weigth-copyright);
+    text-align: center;
+    padding-bottom: 20px;
 }
 /*Tablet and Desktop*/
 

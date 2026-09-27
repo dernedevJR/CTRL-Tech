@@ -15,6 +15,7 @@
 
     --color-support:#98a3b8;
     --hover-color:#2563eb;
+    --color-line: #88adf311;
     
     --font-title: 'Poppins', sans-serif;
     --font-text: 'Inter';
@@ -22,6 +23,7 @@
     --text-weight-title: 700;
     --text-weigth-link: 200;
     --text-weight: 500;
+    --text-weigth-copyright: 100;
 
 }
 /* Reset Geral */
