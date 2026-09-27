@@ -1,25 +1,30 @@
 .footer-container{
     display: flex;
     background: linear-gradient(to right, var(--background-gradient-primary-color), var(--background-gradient-secundary-color));
+    justify-content: center;
 }
-.logo-footer-mobile{
-    width: 150px;
+.logo-footer-pc{
+    width: 250px;
+    margin-top: 20px;
 }
 
 .header-footer{
     display:flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .footer-info p{
     color: var(--light-color);
-    line-height: 30px;
-    font-size: 18px;
+    line-height: 15px;
+    font-size: 11px;
+    text-align: center;
     margin-bottom: 20px;
     font-weight: var(--text-weigth-link);
 }
 
-.logo-footer-pc{
+.logo-footer-mobile{
     display:none;
 }
 .footer-card{
@@ -30,12 +35,12 @@
     display:flex;
     justify-content: space-evenly;
     padding: 10px;
-    gap: 48px;
+    gap: 14px;
     margin-bottom: 20px;
 }
 
 .img-footer{
-    width: 45px;
+    width: 24px;
 }
 /*Tablet and Desktop*/
 

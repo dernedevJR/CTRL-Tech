@@ -10,7 +10,7 @@ const db = new sqlite3.Database('./database/form.db')
 // Middleware 
 app.use(express.urlencoded({extended:true}))
 // Preencher DATABASE 
-db.run(`
+db.run(`  
   CREATE TABLE IF NOT EXISTS solicitacoes (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     nome TEXT NOT NULL,
